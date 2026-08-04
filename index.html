@@ -74,26 +74,27 @@ nav a:hover{
 /* ================= HERO ================= */
 
 .hero{
-    text-align:center;
-    padding:120px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    min-height:90vh;
+    padding:80px 8%;
     background:linear-gradient(135deg,#0f172a,#16213e);
 }
 
-.hero h1{
-    font-size:60px;
-    margin-bottom:25px;
+.hero-text{
+    flex:1;
 }
 
-.hero span{
-    color:#ff4d2d;
+.hero-image{
+    flex:1;
+    text-align:center;
 }
 
-.hero p{
-    max-width:900px;
-    margin:auto;
-    font-size:22px;
-    color:#dddddd;
-    margin-bottom:45px;
+.hero-image img{
+    width:100%;
+    max-width:550px;
 }
 
 /* ================= ABOUT ================= */
@@ -155,6 +156,8 @@ BlazeIntel
 
 <section class="hero">
 
+<div class="hero-text">
+
 <h1>
 Building Africa's
 <span>AI-Powered Emergency Intelligence</span>
@@ -162,10 +165,20 @@ Ecosystem
 </h1>
 
 <p>
-BlazeIntel Limited is building BlazeCad, an AI-powered emergency response platform connecting citizens, emergency responders, healthcare providers, businesses and governments through real-time emergency intelligence.
+BlazeIntel Limited is building BlazeCad, an AI-powered emergency response platform connecting citizens, responders, healthcare providers and governments through real-time emergency intelligence.
 </p>
 
+<a href="#" class="button">Get Started</a>
+
 <a href="#" class="button">Watch Demo</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="hero-image.png" alt="BlazeCad">
+
+</div>
 
 </section>
 
