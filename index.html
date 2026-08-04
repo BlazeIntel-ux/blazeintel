@@ -141,13 +141,14 @@ section{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:80px;
-    padding:120px 8%;
+    gap:120px;
+    padding:140px 8%;
     background:#0b1020;
 }
 
 .about-text{
     flex:1;
+    max-width:600px;
 }
 
 .about-text h2{
@@ -168,10 +169,22 @@ section{
     text-align:center;
 }
 
-.about-image img{
+.image-placeholder{
     width:100%;
-    max-width:550px;
-}    
+    max-width:500px;
+    height:350px;
+    background:#1f2937;
+    border:2px dashed #ff4d2d;
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#ff4d2d;
+    font-size:24px;
+    font-weight:bold;
+        }
 
 /* ================= FOOTER ================= */
 
@@ -272,14 +285,15 @@ BlazeIntel
             Learn More
         </a>
 
+    </div> 
+
+        <div class="about-image">
+
+    <div class="image-placeholder">
+        BlazeIntel Image Here
     </div>
 
-    <div class="about-image">
-
-        <img src="images/about.png" alt="BlazeIntel Team">
-
-    </div>
-
+</div>
 </section>
     
 <footer>
